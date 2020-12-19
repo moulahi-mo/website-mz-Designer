@@ -8,7 +8,7 @@ $secondary-color: #d9d9d9;
 $success-color: #cf3030;
 $error-color: #141414;
 html {
-  scroll-behavior: smooth !important;
+  // scroll-behavior: smooth !important;
 }
 body {
   font-family: 'Poppins', sans-serif;
@@ -40,7 +40,14 @@ button {
 }
 // ! header
 // * header
-
+.darker {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
 header {
   background-image: url(../img/design.jpg);
   background-attachment: fixed;
@@ -50,14 +57,7 @@ header {
   min-height: 100vh;
   width: 100%;
   position: relative;
-  .darker {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-  }
+
   h1 {
     color: $secondary-color;
     margin-top: 100px !important;
@@ -65,7 +65,7 @@ header {
   h4 {
     color: $primary-color;
   }
-  button {
+  #started {
     margin-top: 150px !important;
     color: $secondary-color !important;
     background-color: $success-color !important;
@@ -73,6 +73,7 @@ header {
     margin: 0 auto;
     border: 0;
     outline: 0;
+    width: 170px;
   }
 }
 
@@ -113,13 +114,77 @@ nav {
   a {
     color: $error-color !important;
   }
-  .footer-copyright div {
-    color: $success-color;
-    font-weight: bold;
+  // !footer
+  .footer {
+    .footer-copyright div {
+      color: $success-color;
+      font-weight: bold;
+    }
+    a {
+      margin: 5px 0 !important;
+      &:hover {
+        border-bottom: 1px solid red;
+      }
+    }
   }
 }
 
 // ! main
 .card-title {
   color: $secondary-color !important;
+}
+
+#work {
+  background-image: url(../img/road.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+  position: relative;
+
+  h6,
+  h2 {
+    text-align: center !important;
+    color: #fff;
+  }
+  .divider {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+// ! modals
+.modal {
+  max-height: 86%;
+  overflow-x: hidden;
+  .modal-close {
+    color: $success-color;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+// ! scrollspy
+.active {
+}
+
+// ! discover
+#discover {
+  display: block;
+  margin: 0 auto;
+  background-color: $error-color;
+}
+.tap-target {
+  background-color: $success-color;
+  color: #fff;
+  h5,
+  p {
+    padding-left: 20px;
+  }
+}
+.tap-target-content {
 }

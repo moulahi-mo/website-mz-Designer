@@ -50,8 +50,8 @@
 
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li class="active"><a href="Abstract.html">Abstract</a></li>
-                <li><a href="Logos.html">Logos</a></li>
-                <li><a href="Gaming.html">Gaming</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -62,28 +62,37 @@
           <li>
             <div class="user-view">
               <div class="background">
-                <img src="https://source.unsplash.com/random/361x361" />
+                <img src="./img/dark-wallpaper-36.jpg" />
               </div>
               <a href="#user"
                 ><img
                   class="circle"
                   src="https://source.unsplash.com/random/161x161"
               /></a>
-              <a href="#name"><span class="name">John Doe</span></a>
-              <a href="mailto:" type="email"
+              <a href="#name"><span class="name">Moulahi Mohammed</span></a>
+              <a href="mailto:moulahi.mo@gmail.com" type="email"
                 ><span class="email">moulahi.mo@gmail.com</span></a
               >
             </div>
           </li>
           <li>
             <a href="#!"
-              ><i class="material-icons">cloud</i>First Link With Icon</a
+              ><i class="material-icons red-text text-lighten-2"
+                >record_voice_over</i
+              >Menu</a
             >
           </li>
-          <li><a href="#!">Second Link</a></li>
           <li><div class="divider"></div></li>
-          <li><a class="subheader">Subheader</a></li>
-          <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+          <li class="section">
+            <a href="index.html" class="waves-effect">Home</a>
+          </li>
+
+          <li class="section">
+            <a class="waves-effect" href="services.html">Services</a>
+          </li>
+          <li class="section">
+            <a class="waves-effect" href="contact.html">Contact</a>
+          </li>
         </ul>
         <a id="humb" href="#" data-target="slide-out" class="sidenav-trigger"
           ><i class="material-icons pink-text text-darken-2 small">menu</i></a
@@ -93,21 +102,29 @@
 
         <!--? banner-->
 
-        <h1 class="text-flow center-align pd">I Do Graphic Design</h1>
+        <h1 class="text-flow center-align pd">I Am A Web Developer</h1>
         <h4 class="center-align mr pd">Moulahi Mohammed</h4>
-        <button
-          href="#"
+        <a
+          id="started"
           class="waves-effect waves-light btn hoverable pulse text-flow"
+          onclick="$('.tap-target').tapTarget('open')"
         >
           Get Started
           <i class="material-icons right">cloud</i>
-        </button>
+        </a>
+        <!-- todo discover button-->
+        <a
+          id="discover"
+          class="waves-effect waves-light btn btn-floating black hide"
+          onclick="$('.tap-target').tapTarget('open')"
+          ><i class="material-icons">menu</i></a
+        >
       </div>
     </header>
     <!-- ! Main-->
 
     <main>
-      <section id="welcome" class="welcome section">
+      <section id="welcome" class="welcome section scrollspy">
         <div class="container">
           <div class="row pd mr">
             <div class="col xl4 m6 s12 center-align hide-on-small-only">
@@ -125,10 +142,15 @@
             <div class="col xl8 m6 s12">
               <div class="card hoverable">
                 <div class="card-image">
-                  <img src="https://source.unsplash.com/random/562x562" />
+                  <img
+                    data-caption="A picture of our work"
+                    class="materialboxed responsive-img"
+                    src="https://source.unsplash.com/random/562x562"
+                  />
                   <span class="card-title">Welcome</span>
                   <a
-                    class="btn-floating btn-large halfway-fab waves-effect waves-light red"
+                    href="#modalWelcome"
+                    class="btn-floating btn-large halfway-fab waves-effect waves-light red modal-trigger"
                     ><i class="material-icons">mouse</i></a
                   >
                 </div>
@@ -157,16 +179,21 @@
         </div>
       </section>
 
-      <section id="branding" class="branding section">
+      <section id="branding" class="branding section scrollspy">
         <div class="container">
           <div class="row pd mr">
             <div class="col xl8 m6 s12">
               <div class="card hoverable">
                 <div class="card-image">
-                  <img src="https://source.unsplash.com/random/561x561" />
+                  <img
+                    data-caption="A picture of our Branding"
+                    class="materialboxed responsive-img"
+                    src="https://source.unsplash.com/random/561x561"
+                  />
                   <span class="card-title">Branding</span>
                   <a
-                    class="btn-floating btn-large halfway-fab waves-effect waves-light red"
+                    href="#modalBranding"
+                    class="btn-floating btn-large halfway-fab waves-effect waves-light red modal-trigger"
                     ><i class="material-icons">mouse</i></a
                   >
                 </div>
@@ -183,6 +210,9 @@
                     >
                     <i class="material-icons small yellow-text text-darken-2"
                       >star</i
+                    >
+                    <i class="material-icons small yellow-text text-darken-2"
+                      >star_half</i
                     >
                   </p>
                 </div>
@@ -205,12 +235,44 @@
         </div>
       </section>
     </main>
+    <!-- ! Jumbotron -->
+    <section id="work" class="section">
+      <div class="darker">
+        <div class="container">
+          <h2 class="">Our Work</h2>
+          <div
+            class="divider red lighten-0"
+            style="width: 50px; height: 2px"
+          ></div>
+
+          <h6 class="section">Take a look on our Mindsets</h6>
+
+          <div class="row">
+            <div class="col offset-s4">
+              <div class="video-container">
+                <iframe
+                  width="553"
+                  height="480"
+                  src="https://www.youtube.com/watch?v=Rf5WqpryUYQ?rel=0"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--! footer -->
     <footer class="page-footer">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
             <h5 class="white-text center-align">About Me</h5>
+            <div
+              class="divider red lighten-0"
+              style="width: 50px; height: 3px"
+            ></div>
             <p
               class="grey-text text-lighten-4 center-align"
               style="color: #141414 !important"
@@ -220,6 +282,10 @@
           </div>
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Menu</h5>
+            <div
+              class="divider red lighten-0"
+              style="width: 50px; height: 3px"
+            ></div>
             <ul>
               <li>
                 <a
@@ -229,6 +295,7 @@
                   >Home</a
                 >
               </li>
+
               <li>
                 <a
                   class="grey-text text-lighten-3"
@@ -258,10 +325,83 @@
         </div>
       </div>
       <div class="footer-copyright">
-        <div class="container center-align">Copyright© Moulahi Js 2020</div>
+        <div class="container center-align red-text text-accent-4">
+          Copyright© Moulahi Js 2020
+        </div>
       </div>
     </footer>
 
+    <!--! MODALS-->
+
+    <!-- ? Modal Welcome -->
+
+    <div
+      id="modalWelcome"
+      class="modal animate__animated animate__fadeInDown animate__fast"
+    >
+      <div class="modal-content">
+        <img
+          class="responsive-img"
+          src="https://source.unsplash.com/random/361x361"
+          alt=""
+        />
+        <h4 class="section center-align">Welcome</h4>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. A recusandae
+          optio explicabo, alias est exercitationem dolorem numquam enim
+          consequatur eum quam excepturi ab. Earum eum optio officia id quidem
+          quae!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-pink btn-flat"
+          >Cool I Like It !</a
+        >
+      </div>
+    </div>
+
+    <!-- ? Modal Branding -->
+
+    <div
+      id="modalBranding"
+      class="modal animate__animated animate__fadeInDown animate__fast"
+    >
+      <div class="modal-content">
+        <img
+          class="responsive-img"
+          src="https://source.unsplash.com/random/360x360"
+          alt=""
+        />
+        <h4 class="section center-align">Branding</h4>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. A recusandae
+          optio explicabo, alias est exercitationem dolorem numquam enim
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-pink btn-flat"
+          >Cool I Like It !</a
+        >
+      </div>
+    </div>
+
+    <!-- discovery -->
+    <!-- Element Showed -->
+
+    <!-- Tap Target Structure -->
+    <div class="tap-target" data-target="discover">
+      <div class="tap-target-content">
+        <h5>New Features !!</h5>
+        <p>A lot of new features are comming just stay tunned with us .</p>
+      </div>
+    </div>
+
+    <!-- ! STRUCTURE FINISH-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
     <!--fontawsome-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
