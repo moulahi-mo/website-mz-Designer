@@ -1,0 +1,125 @@
+//! init
+
+@import 'materialize.scss';
+
+// ! variables
+$primary-color: #e88a1a;
+$secondary-color: #d9d9d9;
+$success-color: #cf3030;
+$error-color: #141414;
+html {
+  scroll-behavior: smooth !important;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: $secondary-color;
+}
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  color: $primary-color;
+}
+.mr {
+  margin: 30px 0 !important;
+}
+.pd {
+  padding: 30px 0 !important;
+}
+button {
+  color: $secondary-color !important;
+  background-color: $success-color !important;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  margin: auto auto !important;
+}
+// ! header
+// * header
+
+header {
+  background-image: url(../img/design.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  .darker {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  h1 {
+    color: $secondary-color;
+    margin-top: 100px !important;
+  }
+  h4 {
+    color: $primary-color;
+  }
+  button {
+    margin-top: 150px !important;
+    color: $secondary-color !important;
+    background-color: $success-color !important;
+    display: block !important;
+    margin: 0 auto;
+    border: 0;
+    outline: 0;
+  }
+}
+
+nav {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  box-shadow: 0 !important;
+  -webkit-box-shadow: 0 !important;
+  // background-color: rgba(207, 48, 48, 0.5) !important;
+  .brand-logo {
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+// ? sidenav
+.sidenav {
+  .user-view {
+    a {
+      color: $primary-color !important;
+      font-weight: bold;
+    }
+  }
+}
+#humb {
+  position: relative !important;
+  top: -43px !important;
+  left: 23px !important;
+}
+
+.page-footer {
+  background-color: $primary-color !important;
+  h5,
+  ul li {
+    color: $error-color !important;
+  }
+  a {
+    color: $error-color !important;
+  }
+  .footer-copyright div {
+    color: $success-color;
+    font-weight: bold;
+  }
+}
+
+// ! main
+.card-title {
+  color: $secondary-color !important;
+}
