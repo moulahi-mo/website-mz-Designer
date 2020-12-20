@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--animate=====
+	 
+	 class="animate__animated animate__<Name of animation> site:www.animate.css-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!--Import Google Icon Font-->
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Mains css style-->
+
+    <link rel="stylesheet" href="sass\style.css" />
+
+    <title>My name is Moulahi</title>
+  </head>
+  <body class="">
+    <!--! Header-->
+    <header>
+      <div class="darker">
+        <!-- <div class="video-background"> -->
+        <!--? navbar-->
+
+        <nav class="servicesNav">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo"
+                ><i class="material-icons hide-on-small-only">cloud</i>
+                Moulahi</a
+              >
+
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- !sidenav Start-->
+        <ul id="slide-out" class="sidenav servicesSide">
+          <li>
+            <div class="user-view">
+              <div class="background">
+                <img src="./img/dark-wallpaper-36.jpg" />
+              </div>
+              <a href="#user"
+                ><img
+                  class="circle"
+                  src="https://source.unsplash.com/random/161x161"
+              /></a>
+              <a href="#name"><span class="name">Moulahi Mohammed</span></a>
+              <a href="mailto:moulahi.mo@gmail.com" type="email"
+                ><span class="email">moulahi.mo@gmail.com</span></a
+              >
+            </div>
+          </li>
+          <li>
+            <a href="#!"
+              ><i class="material-icons red-text text-lighten-2"
+                >record_voice_over</i
+              >Menu</a
+            >
+          </li>
+          <li><div class="divider"></div></li>
+          <li class="section">
+            <a href="index.html" class="waves-effect">Home</a>
+          </li>
+
+          <li class="section">
+            <a class="waves-effect" href="services.html">Services</a>
+          </li>
+          <li class="section">
+            <a class="waves-effect" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <a id="humb" href="#" data-target="slide-out" class="sidenav-trigger"
+          ><i class="material-icons pink-text text-darken-2 small">menu</i></a
+        >
+
+        <!-- !sidenav ENd-->
+        <!--? banner showcase-->
+        <article class="servicesShowcase">
+          <h1 class="text-flow center-align pd">Hight Quality Services</h1>
+          <h4 class="center-align mr pd">Ready To Go ??</h4>
+          <a
+            id="started"
+            class="waves-effect waves-light btn hoverable pulse text-flow"
+            onclick="$('.tap-target').tapTarget('open')"
+          >
+            Checkout More
+            <i class="material-icons right">cloud</i>
+          </a>
+
+          <!-- todo discover button-->
+          <a
+            id="discover"
+            class="waves-effect waves-light btn btn-floating black hide"
+            onclick="$('.tap-target').tapTarget('open')"
+            ><i class="material-icons">menu</i></a
+          >
+        </article>
+        <!--? banner video-->
+
+        <div class="video-wrap">
+          <div id="video">
+            <video class="" muted autoplay loop>
+              <source src="./vid/video (1).mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- todo discover button-->
+      </div>
+    </header>
+    <!-- ! Main-->
+
+    <main>
+      <!-- ! Jumbotron -->
+      <section id="services-box" class="section">
+        <div class="darker">
+          <div class="container">
+            <h2 class="">Our Services</h2>
+            <div
+              class="divider red lighten-0"
+              style="width: 50px; height: 2px"
+            ></div>
+
+            <h6 class="section">Take a look on our Services</h6>
+            <div class="progress white">
+              <div class="indeterminate red darken-0"></div>
+            </div>
+
+            <div
+              class="section mr row wow animate__animated animate__fadeIn animate__slower"
+            >
+              <!-- //? BOXES -->
+              <div class="col s12 m6 l4">
+                <div class="card black darken-1">
+                  <div class="card-content white-text hoverable center-align">
+                    <i class="fab fa-black-tie fa-7x"></i>
+                    <span class="card-title flow-text">Quality</span>
+                    <p class="">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Exercitationem quas blanditiis esse ab libero, itaque ut
+                      illum eum nesciunt accusantium!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l4">
+                <div class="card yellow darken-3">
+                  <div class="card-content black-text hoverable center-align">
+                    <i class="fab fa-buromobelexperte fa-7x"></i>
+                    <span class="card-title black-text flow-text">Nice</span>
+                    <p class="">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Exercitationem quas blanditiis esse ab libero, itaque ut
+                      illum eum nesciunt accusantium!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l4">
+                <div class="card red darken-0">
+                  <div class="card-content white-text hoverable center-align">
+                    <i class="fab fa-connectdevelop fa-7x"></i>
+                    <span class="card-title flow-text">Clean</span>
+                    <p class="">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Exercitationem quas blanditiis esse ab libero, itaque ut
+                      illum eum nesciunt accusantium!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l4">
+                <div class="card red darken-0">
+                  <div class="card-content white-text hoverable center-align">
+                    <i class="fab fa-dev fa-7x"></i>
+                    <span class="card-title flow-text">Motivation</span>
+                    <p class="">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Exercitationem quas blanditiis esse ab libero, itaque ut
+                      illum eum nesciunt accusantium!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l4">
+                <div class="card yellow darken-3">
+                  <div class="card-content black-text hoverable center-align">
+                    <i class="fab fa-medapps fa-7x"></i>
+                    <span class="card-title black-text flow-text">Ideas</span>
+                    <p class="">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Exercitationem quas blanditiis esse ab libero, itaque ut
+                      illum eum nesciunt accusantium!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l4">
+                <div class="card black darken-1">
+                  <div class="card-content white-text hoverable center-align">
+                    <i class="fab fa-battle-net fa-7x"></i>
+                    <span class="card-title flow-text">Creativity</span>
+                    <p class="">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Exercitationem quas blanditiis esse ab libero, itaque ut
+                      illum eum nesciunt accusantium!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ? collapsible -->
+              <div
+                class="divider red lighten-0"
+                style="width: 50px; height: 2px"
+              ></div>
+
+              <ul class="collapsible popout section mr hoverable">
+                <li>
+                  <div class="collapsible-header">
+                    <i class="material-icons yellow-text text-darken-3"
+                      >filter_drama</i
+                    >Prices
+                  </div>
+                  <div class="collapsible-body white">
+                    <span class="">Lorem ipsum dolor sit amet.</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">
+                    <i class="material-icons yellow-text text-darken-3">place</i
+                    >Numbers
+                  </div>
+                  <div class="collapsible-body white">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">
+                    <i class="material-icons yellow-text text-darken-3"
+                      >whatshot</i
+                    >Timing
+                  </div>
+                  <div class="collapsible-body white">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ! testemonials-->
+      <section id="work" class="section test section">
+        <div class="container">
+          <h2 class="">Testemonials</h2>
+          <div
+            class="divider red lighten-0"
+            style="width: 50px; height: 2px"
+          ></div>
+
+          <h6 class="section">See what our clients think about us</h6>
+          <div class="progress white">
+            <div class="indeterminate yellow darken-3"></div>
+          </div>
+          <div
+            class="section row wow animate__animated animate__fadeIn animate__slower"
+          >
+            <div class="col s12">
+              <!-- ? start test-->
+              <div class="carousel carousel-slider center">
+                <div class="carousel-fixed-item center"></div>
+                <div class="carousel-item red darken-0 white-text" href="#one!">
+                  <h2>First Client</h2>
+                  <p class="white-text">This is your first panel</p>
+                </div>
+                <div class="carousel-item dark white-text" href="#two!">
+                  <h2>Second Client</h2>
+                  <p class="white-text">This is your second panel</p>
+                </div>
+                <div class="carousel-item yellow darken-3" href="#three!">
+                  <h2 class="black-text">Third Client</h2>
+                  <p class="black-text">This is your third panel</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--! footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text center-align">About Me</h5>
+            <div
+              class="divider red lighten-0"
+              style="width: 50px; height: 3px"
+            ></div>
+            <p
+              class="grey-text text-lighten-4 center-align"
+              style="color: #141414 !important"
+            >
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text center-align">Menu</h5>
+            <div
+              class="divider red lighten-0"
+              style="width: 50px; height: 3px"
+            ></div>
+            <ul>
+              <li>
+                <a
+                  class="grey-text text-lighten-3 center-align"
+                  href="#"
+                  style="color: #141414 !important"
+                  >Home</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="grey-text text-lighten-3 center-align"
+                  href="#welcome"
+                  style="color: #141414 !important"
+                  >Welcome</a
+                >
+              </li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3 center-align"
+                  href="#branding"
+                  style="color: #141414 !important"
+                  >Branding</a
+                >
+              </li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3 center-align"
+                  href="#contact"
+                  style="color: #141414 !important"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container center-align red-text text-accent-4">
+          Copyright© Moulahi Js 2020
+        </div>
+      </div>
+    </footer>
+
+    <!--! MODALS-->
+
+    <!-- ? Modal Welcome -->
+
+    <div
+      id="modalWelcome"
+      class="modal animate__animated animate__fadeInDown animate__fast"
+    >
+      <div class="modal-content">
+        <img
+          class="responsive-img"
+          src="https://source.unsplash.com/random/361x361"
+          alt=""
+        />
+        <h4 class="section center-align">Welcome</h4>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. A recusandae
+          optio explicabo, alias est exercitationem dolorem numquam enim
+          consequatur eum quam excepturi ab. Earum eum optio officia id quidem
+          quae!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-pink btn-flat"
+          >Cool I Like It !</a
+        >
+      </div>
+    </div>
+
+    <!-- ? Modal Branding -->
+
+    <div
+      id="modalBranding"
+      class="modal animate__animated animate__fadeInDown animate__fast"
+    >
+      <div class="modal-content">
+        <img
+          class="responsive-img"
+          src="https://source.unsplash.com/random/360x360"
+          alt=""
+        />
+        <h4 class="section center-align">Branding</h4>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. A recusandae
+          optio explicabo, alias est exercitationem dolorem numquam enim
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-pink btn-flat"
+          >Cool I Like It !</a
+        >
+      </div>
+    </div>
+
+    <!-- discovery -->
+    <!-- Element Showed -->
+
+    <!-- Tap Target Structure -->
+    <div class="tap-target" data-target="discover">
+      <div class="tap-target-content">
+        <h5>More Services !!</h5>
+        <p>
+          Just checkout a lot of our services you will be satistfyed by theme .
+        </p>
+      </div>
+    </div>
+
+    <!-- ! STRUCTURE FINISH-->
+    <!--fontawsome-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Materialize! -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- our script file -->
+    <script>
+      'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js';
+
+    </script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

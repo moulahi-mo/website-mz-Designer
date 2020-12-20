@@ -9026,7 +9026,7 @@ a {
 }
 
 a:hover {
-  color: #e88a1a;
+  color: #e88a1a !important;
 }
 
 .mr {
@@ -9142,6 +9142,11 @@ nav .brand-logo:hover {
   font-weight: bold;
 }
 
+.page-footer .footer ul {
+  display: block;
+  margin: 0 auto;
+}
+
 .page-footer .footer a {
   margin: 5px 0 !important;
 }
@@ -9176,6 +9181,21 @@ nav .brand-logo:hover {
   margin: 0 auto;
 }
 
+#work .responsive-video {
+  width: 100%;
+}
+
+#work .responsive-video {
+  width: 100%;
+  height: 400px;
+  outline: 0;
+  border: 0;
+}
+
+#work iframe {
+  width: 100%;
+}
+
 .modal {
   max-height: 86%;
   overflow-x: hidden;
@@ -9188,6 +9208,102 @@ nav .brand-logo:hover {
 .modal img {
   display: block;
   margin: 0 auto;
+}
+
+.servicesNav a {
+  color: #141414;
+}
+
+.servicesNav ul a {
+  font-weight: normal;
+}
+
+.servicesShowcase a:first-of-type {
+  width: 200px !important;
+}
+
+.servicesShowcase h1 {
+  color: #141414;
+}
+
+.servicesShowcase h4 {
+  font-weight: bold;
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Black Opacity On Video */
+}
+
+.video-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#video {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+  z-index: -1000;
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background: url("") no-repeat;
+  background-size: cover;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
+}
+
+#services-box {
+  background-image: url(https://source.unsplash.com/random/1062x1062);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 1400px;
+  width: 100%;
+  position: relative;
+}
+
+#services-box h6,
+#services-box h2 {
+  text-align: center !important;
+  color: #fff;
+}
+
+#services-box .divider {
+  display: block;
+  margin: 0 auto;
+}
+
+.test {
+  background-color: black !important;
+  background-image: url("") !important;
 }
 
 #discover {

@@ -124,9 +124,11 @@
     <!-- ! Main-->
 
     <main>
-      <section id="welcome" class="welcome section scrollspy">
+      <section id="welcome" class="welcome section">
         <div class="container">
-          <div class="row pd mr">
+          <div
+            class="row pd mr wow animate__animated animate__fadeIn animate__slower"
+          >
             <div class="col xl4 m6 s12 center-align hide-on-small-only">
               <h2>Welcome</h2>
               <div
@@ -179,9 +181,11 @@
         </div>
       </section>
 
-      <section id="branding" class="branding section scrollspy">
+      <section id="branding" class="branding section">
         <div class="container">
-          <div class="row pd mr">
+          <div
+            class="row pd mr wow animate__animated animate__fadeIn animate__slower"
+          >
             <div class="col xl8 m6 s12">
               <div class="card hoverable">
                 <div class="card-image">
@@ -247,17 +251,19 @@
 
           <h6 class="section">Take a look on our Mindsets</h6>
 
-          <div class="row">
-            <div class="col offset-s4">
-              <div class="video-container">
-                <iframe
-                  width="553"
-                  height="480"
-                  src="https://www.youtube.com/watch?v=Rf5WqpryUYQ?rel=0"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </div>
+          <div
+            class="row wow animate__animated animate__fadeIn animate__slower"
+          >
+            <div class="col s12">
+              <iframe
+                class="responsive-video hoverable z-depth-5 mr"
+                width="560"
+                height="415"
+                src="https://www.youtube.com/embed/SMKPKGW083c"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>
@@ -281,7 +287,7 @@
             </p>
           </div>
           <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Menu</h5>
+            <h5 class="white-text center-align">Menu</h5>
             <div
               class="divider red lighten-0"
               style="width: 50px; height: 3px"
@@ -289,7 +295,7 @@
             <ul>
               <li>
                 <a
-                  class="grey-text text-lighten-3"
+                  class="grey-text text-lighten-3 center-align"
                   href="#"
                   style="color: #141414 !important"
                   >Home</a
@@ -298,7 +304,7 @@
 
               <li>
                 <a
-                  class="grey-text text-lighten-3"
+                  class="grey-text text-lighten-3 center-align"
                   href="#welcome"
                   style="color: #141414 !important"
                   >Welcome</a
@@ -306,7 +312,7 @@
               </li>
               <li>
                 <a
-                  class="grey-text text-lighten-3"
+                  class="grey-text text-lighten-3 center-align"
                   href="#branding"
                   style="color: #141414 !important"
                   >Branding</a
@@ -314,7 +320,7 @@
               </li>
               <li>
                 <a
-                  class="grey-text text-lighten-3"
+                  class="grey-text text-lighten-3 center-align"
                   href="#contact"
                   style="color: #141414 !important"
                   >contact</a
@@ -397,20 +403,27 @@
     </div>
 
     <!-- ! STRUCTURE FINISH-->
+    <!--fontawsome-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
-    <!--fontawsome-->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <!-- Materialize! -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <!-- our script file -->
+    <script>
+      'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js';
 
+    </script>
+    <script>
+      new WOW().init();
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>
