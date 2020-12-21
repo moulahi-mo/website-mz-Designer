@@ -1,18 +1,19 @@
 //! init
 
 @import 'materialize.scss';
-
+@import 'mixins.scss';
 // ! variables
 $primary-color: #e88a1a;
 $secondary-color: #d9d9d9;
 $success-color: #cf3030;
 $error-color: #141414;
 html {
-  // scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }
 body {
   font-family: 'Poppins', sans-serif;
   background-color: $secondary-color;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none !important;
@@ -74,6 +75,7 @@ header {
     border: 0;
     outline: 0;
     width: 170px;
+    z-index: 3;
   }
 }
 
@@ -100,9 +102,10 @@ nav {
   }
 }
 #humb {
-  position: relative !important;
-  top: -43px !important;
+  position: absolute !important;
+  top: 15px !important;
   left: 23px !important;
+  z-index: 3;
 }
 
 .page-footer {
@@ -193,9 +196,30 @@ nav {
   ul a {
     font-weight: normal;
   }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  z-index: 3;
 }
-
+// .servicesHumb {
+//   position: relative !important;
+//   top: 15px !important;
+//   left: 23px !important;
+//   z-index: 3;
+// }
+.contactSlider {
+  margin-top: 600px;
+}
 .servicesShowcase {
+  position: relative;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  z-index: 3;
+
   a:first-of-type {
     width: 200px !important;
   }
@@ -221,6 +245,8 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 1); /* Black Opacity On Video */
 }
 
 #video {
@@ -253,7 +279,7 @@ video {
 }
 
 // !end video
-
+//!Box cards
 #services-box {
   background-image: url(https://source.unsplash.com/random/1062x1062);
   background-position: center center;
@@ -273,13 +299,155 @@ video {
     display: block;
     margin: 0 auto;
   }
-}
-.test {
-  background-color: black !important;
-  background-image: url('') !important;
+  .col span {
+    color: #fff !important;
+  }
+  .row .col:nth-child(5) span {
+    color: black !important;
+  }
+  .row .col:nth-child(2) span {
+    color: black !important;
+  }
+
+  // todo media queries
+  @include md {
+    height: 1800px !important;
+  }
+  @include sm {
+    height: 2200px !important;
+  }
+
+  @include xsm {
+    height: 2400px !important;
+  }
+  @include xxsm {
+    height: 2600px !important;
+  }
 }
 
+//! colapssibles
+.collapsible-body {
+  span {
+    margin: 10px 0;
+    display: block;
+  }
+}
+//! testemonials
+
+.test {
+  background-color: #fff !important;
+  background-image: url('') !important;
+}
+.carousel-item {
+  i {
+    text-align: left !important;
+  }
+  h2,
+  cite {
+    padding: 50px 0;
+  }
+  p {
+    font-style: italic;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 // TODO SERVICE.HTML END ************************************************************************/
+// TODO CONTACT.HTML START ************************************************************************/
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100% !important;
+  top: 0;
+  left: 0;
+  .slides {
+    height: 100% !important;
+  }
+  h5 {
+    color: $error-color !important;
+  }
+  h3 {
+    color: $primary-color !important;
+  }
+}
+
+.contact {
+  .map-parent {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  form {
+    padding: 10px;
+    position: absolute;
+    width: 50%;
+    height: 70vh;
+    // top: 200px;
+    left: 25%;
+    cursor: pointer;
+    background-color: seashell;
+    opacity: 0.8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    textarea {
+      resize: none;
+      height: 150px;
+    }
+    .input-field {
+      input:focus + label {
+        color: $success-color !important;
+      }
+
+      display: flex !important;
+      flex-direction: row !important;
+    }
+
+    input,
+    textarea,
+    label {
+      box-shadow: none !important;
+
+      &:focus {
+        border-bottom: 2px solid $success-color !important;
+      }
+    }
+    textarea:focus + label {
+      color: $success-color !important;
+    }
+  }
+}
+.menuContact {
+  margin: 0 auto;
+  ul {
+    width: 100%;
+  }
+  .social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+  }
+}
+
+// TODO CONTACT.HTML END ************************************************************************/
 // ! scrollspy
 
 // ! discover
@@ -294,5 +462,29 @@ video {
   h5,
   p {
     padding-left: 20px;
+  }
+}
+
+// TODO MEDIA QUERIES   ************************************************************************/
+.container > h2 {
+  @include sm {
+    font-size: 2.5rem;
+  }
+}
+header {
+  h1 {
+    @include xsm {
+      font-size: 3.5rem;
+    }
+  }
+  h4 {
+    @include xsm {
+      font-size: 2rem;
+    }
+  }
+}
+body {
+  @include xxsm {
+    overflow-x: hidden;
   }
 }

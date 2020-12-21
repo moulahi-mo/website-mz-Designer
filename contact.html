@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--animate=====
+	 
+	 class="animate__animated animate__<Name of animation> site:www.animate.css-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!--Import Google Icon Font-->
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Mains css style-->
+
+    <link rel="stylesheet" href="sass\style.css" />
+
+    <title>Contact</title>
+  </head>
+  <body class="">
+    <!--! Header-->
+    <header>
+      <div class="darker">
+        <!--? navbar-->
+
+        <nav class="servicesNav">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo"
+                ><i class="material-icons hide-on-small-only">cloud</i>
+                Moulahi</a
+              >
+
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- !sidenav Start-->
+        <ul id="slide-out" class="sidenav servicesSide">
+          <li>
+            <div class="user-view">
+              <div class="background">
+                <img src="./img/dark-wallpaper-36.jpg" />
+              </div>
+              <a href="#user"
+                ><img
+                  class="circle"
+                  src="https://source.unsplash.com/random/161x161"
+              /></a>
+              <a href="#name"><span class="name">Moulahi Mohammed</span></a>
+              <a href="mailto:moulahi.mo@gmail.com" type="email"
+                ><span class="email">moulahi.mo@gmail.com</span></a
+              >
+            </div>
+          </li>
+          <li>
+            <a href="#!"
+              ><i class="material-icons red-text text-lighten-2"
+                >record_voice_over</i
+              >Menu</a
+            >
+          </li>
+          <li><div class="divider"></div></li>
+          <li class="section">
+            <a href="index.html" class="waves-effect">Home</a>
+          </li>
+
+          <li class="section">
+            <a class="waves-effect" href="services.html">Services</a>
+          </li>
+          <li class="section">
+            <a class="waves-effect" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <a
+          id="humb"
+          href="#"
+          data-target="slide-out"
+          class="servicesHumb sidenav-trigger"
+          ><i class="material-icons pink-text text-darken-2 small">menu</i></a
+        >
+
+        <!-- !sidenav ENd-->
+        <!--? banner showcase-->
+        <article class="contactSlider">
+          <a
+            id="started"
+            class="waves-effect waves-light btn hoverable pulse text-flow"
+            onclick="$('.tap-target').tapTarget('open')"
+          >
+            Contact us
+            <i class="material-icons right">email</i>
+          </a>
+
+          <!-- todo discover button-->
+          <a
+            id="discover"
+            class="waves-effect waves-light btn btn-floating black hide"
+            onclick="$('.tap-target').tapTarget('open')"
+            ><i class="material-icons">menu</i></a
+          >
+        </article>
+        <!--? Slider --------------------------------------------------->
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="https://source.unsplash.com/random/1163x1160" />
+              <!-- random image -->
+              <div class="caption center-align">
+                <h3>Are You ready!</h3>
+                <h5 class="">First Line</h5>
+              </div>
+            </li>
+            <li>
+              <img src="https://source.unsplash.com/random/1160x1165" />
+              <!-- random image -->
+              <div class="caption left-align">
+                <h3>New generation</h3>
+                <h5 class="">It is an other one here</h5>
+              </div>
+            </li>
+            <li>
+              <img src="https://source.unsplash.com/random/1160x1160" />
+              <!-- random image -->
+              <div class="caption right-align">
+                <h3>Keep it up</h3>
+                <h5 class="">We are here for you</h5>
+              </div>
+            </li>
+            <li>
+              <img src="https://source.unsplash.com/random/1162x1160" />
+              <!-- random image -->
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="">Here's our small slogan.</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- </div> -->
+        <!-- todo discover button-->
+      </div>
+    </header>
+    <!-- ! Main-->
+
+    <main>
+      <!-- ! Jumbotron -->
+      <section id="contact" class="contact">
+        <div class="map-parent">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <!-- * Map-->
+                <iframe
+                  id="map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53963.18230094664!2d-9.271712303364565!3d32.2930725167809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac212049843597%3A0x6b618c47dfd85d40!2sSafi!5e0!3m2!1sen!2sma!4v1608584385395!5m2!1sen!2sma"
+                  width="100%"
+                  height="100%"
+                  frameborder="0"
+                  style="border: 0"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
+              </div>
+              <div class="col">
+                <!-- * contact form-->
+                <form class="hoverable z-depth-5">
+                  <div class="input-field col s12">
+                    <input type="text" id="first_name" class="validate" />
+                    <label for="first_name">First Name</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <input type="text" id="last_name" class="validate" />
+                    <label for="last_name">Last Name</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <input type="email" id="email" class="validate" />
+                    <label for="email" data-error="wrong" data-success="right"
+                      >Email</label
+                    >
+                  </div>
+                  <div class="input-field col s12">
+                    <textarea
+                      id="textarea1"
+                      class="materialize-textarea"
+                    ></textarea>
+                    <label for="textarea1">Message</label>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn-floating btn-large waves-effect waves-light red darken-1"
+                    ><i class="material-icons">send</i></a
+                  >
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--! footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text center-align">About Me</h5>
+            <div
+              class="divider red lighten-0"
+              style="width: 50px; height: 3px"
+            ></div>
+            <p
+              class="grey-text text-lighten-4 center-align"
+              style="color: #141414 !important"
+            >
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="menuContact col l4 offset-l2 s12">
+            <h5 class="white-text center-align">Menu</h5>
+            <div
+              class="divider red lighten-0"
+              style="width: 50px; height: 3px"
+            ></div>
+            <ul class="social">
+              <!--! social-->
+              <li>
+                <a
+                  class="grey-text text-lighten-3 center-align flow-text"
+                  href="#!"
+                  style="color: #141414 !important"
+                  ><i class="fab fa-instagram" aria-hidden="true"></i
+                ></a>
+              </li>
+              <!-- <div class="social"> -->
+              <li>
+                <a
+                  class="grey-text text-lighten-3 center-align flow-text"
+                  href="#!"
+                  style="color: #141414 !important"
+                  ><i class="fab fa-facebook" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3 center-align flow-text"
+                  href="#!"
+                  style="color: #141414 !important"
+                  ><i class="fab fa-twitter" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3 center-align flow-text"
+                  href="#!"
+                  style="color: #141414 !important"
+                  ><i class="fab fa-youtube" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container center-align red-text text-accent-4">
+          Copyright© Moulahi Js 2020
+        </div>
+      </div>
+    </footer>
+
+    <!-- discovery -->
+    <!-- Element Showed -->
+
+    <!-- Tap Target Structure -->
+    <div class="tap-target" data-target="discover">
+      <div class="tap-target-content">
+        <h5>Contact Us !!</h5>
+        <p>Waiting for you get us a touch !! .</p>
+      </div>
+    </div>
+
+    <!-- ! STRUCTURE FINISH-->
+    <!--fontawsome-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Materialize! -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- our script file -->
+    <script>
+      'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js';
+
+    </script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
